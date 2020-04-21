@@ -27,9 +27,9 @@ apk add --no-cache --virtual build-deps alpine-sdk cmake libusb-dev python3-dev 
 # Define an environment variable
 #
 # Use this variable when creating a container to specify the MQTT broker host.
-#ENV MQTT_HOST="hassio.local"
-#ENV MQTT_USER="guest"
-#ENV MQTT_PASS="guest"
-#ENV MQTT_TOPIC="homeassistant/sensor/ink"
+ENV MQTT_HOST="10.0.0.5"
+ENV MQTT_USER="mqttadmin"
+ENV MQTT_PASS="doghouse"
+ENV MQTT_TOPIC="homeassistant/sensor/ink"
 
 #CMD cd / && cp /config/hplip2mqtt/hplip2mqtt.sh /hplip2mqtt.sh && chmod +x /hplip2mqtt.sh && /hplip2mqtt.sh
